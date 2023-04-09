@@ -1,0 +1,114 @@
+* {
+    margin: 0 px;
+    padding: 3px;
+    font-family:'Dosis', sans-serif;
+}
+.main {
+    width: 80%;
+    margin: auto;
+}
+.navibar {
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+ul {
+    flex: 1;
+    text-align: right;
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+}
+ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 10px;
+    position: relative;
+}
+
+
+ul li a::after {
+    content:'';
+    width: 100%;
+    height: 10px;
+}
+
+
+ul li a:hover::after {
+    width: 100%;
+    background: rgb(255, 195, 1);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -55px;
+}
+.navibar img {
+    height: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.banner {
+    display: flex;
+    margin-top: 50px;
+}
+.left-column, .right-column {
+    flex-basis: 50%;
+}
+.right-column img {
+    width: 100%;
+}
+.left-column h1 {
+    font-size: 100px;
+}
+.left-column h3 {
+    font-size: 30px;
+}
+span {
+    color: rgb(255, 195, 1)
+}
+.left-column p{
+    font-size: 16px;
+    color: #999;
+    margin: 30px 0;
+}
+.butn button{
+    padding:  7px 30px;
+    margin-right: 15px;
+    outline: none;
+    border: 1px solid #fb7381;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fb7381;
+    background: transparent;
+}
+.butn{
+    margin-bottom: 30px;
+}
+.butn .pri-butn{
+    background: linear-gradient(#fb7381, #f14a60);
+    box-shadow: 0 2px 15px rgba(248, 38, 103, 0.26);
+    color: #fff;
+}
+.social-media {
+    width: 200px;
+    text-align: center;
+
+
+}
+.social-media img {
+    height: 30px;
+    margin: 0.14;
+}
+.social-media::after{
+    content: '';
+    width: 15px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    left: -160px;
+    top: 10px;
+}
